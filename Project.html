@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Arrow Functions</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: rgb(0, 0, 0);
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+        text-align: center;
+        margin-top: 20px;
+        color: rgb(0, 0, 0);
+      }
+
+      p {
+        font-size: 1.2em;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      #result {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-shadow: 4px 4px 3px;
+      }
+
+      #result2 {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-shadow: 4px 4px 3px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container"
+      style="
+        background-color: rgb(52, 58, 64);
+        width: 400px;
+        text-align: center;
+        margin-left: 340px;
+        box-shadow: 1px 10px 100px;
+      "
+    >
+      <h2>JavaScript Arrow Functions</h2>
+
+      <p id="result"></p>
+      <p id="result2"></p>
+
+      <script>
+        const add = (a, b) => a + b;
+        const product = (a, b) => a * b;
+
+        document.getElementById("result").innerHTML = "Sum: " + add(7, 7);
+        document.getElementById("result2").innerHTML =
+          "Product: " + product(421, 621);
+      </script>
+    </div>
+  </body>
+</html>
