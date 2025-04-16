@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Error Handling in JavaScript</h2>
+    <p id="error_message"></p>
+
+    <script>
+      // function addalert(msg) {
+      //   document.write(msg);
+      // }
+
+      try {
+        addalert("Welcome Guest!");
+      } catch (err) {
+        document.getElementById("error_message").innerHTML = err.message;
+      }
+    </script>
+  </body>
+</html>
